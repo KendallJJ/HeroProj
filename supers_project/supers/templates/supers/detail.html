@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    
+</head>
+<body>
+    <h1>Your Chosen Super</h1>
+    <ul>
+        {% for supers in single_super %}
+        <li><h1>{{supers.name}}</h1>
+            <h2>{{supers.alter_ego}}</h2></li>
+        <li>
+            <h1>{{supers.primary_ability}}</h1>
+            <h2>{{supers.secondary_ability}}</h2>
+        </li>
+        <p>{{supers.catch_phrase}}</p>
+         {%endfor%}
+
+    </ul>
+    <ul>
+
+
+    </ul>
+</body>
+</html>

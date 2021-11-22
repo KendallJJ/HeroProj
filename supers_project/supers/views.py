@@ -16,11 +16,12 @@ def index(request):
     return render(request, 'supers/index.html', context)
 
 def detail(request, super_id):
-        single_super = Supers.objects.get(pk=super_id)
+        single_super = Supers.objects.filter(pk=super_id)
         context = {
             'single_super' : single_super
         }
         return render(request, 'supers/detail.html', context)
+
 
 
 def create(request):
